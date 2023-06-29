@@ -11,7 +11,7 @@ function App() {
         <Route path="/order/:id" element={<Forgtopassword />} />
         {/* <Route path="/product/:id" element={<ProductDetails />} /> */}
       </Routes>
-      <Forgtopassword />
+
     </>
   );
 }
