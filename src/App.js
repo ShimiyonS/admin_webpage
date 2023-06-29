@@ -1,11 +1,17 @@
 //import { Route, Routes } from 'react-router-dom';
-import './App.css';
-import Forgtopassword from './Forgto_password';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Forgtopassword from "./Forgto_password";
 //import Singup from './Singup_page';
 
 function App() {
-  return (<>
-   <Forgtopassword/>
+  return (
+    <>
+      <Routes>
+        <Route path="/order/:id" element={<Forgtopassword />} />
+        {/* <Route path="/product/:id" element={<ProductDetails />} /> */}
+      </Routes>
+      <Forgtopassword />
     </>
   );
 }
