@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/order/:id" element={<Forgtopassword />} />
+        <Route path="/users/reset_password/:id/:token" element={<Forgtopassword />} />
         {/* <Route path="/product/:id" element={<ProductDetails />} /> */}
       </Routes>
 
