@@ -5,9 +5,8 @@ import Singup from './Singup_page';
 
 function App() {
   return (<>
-    <Forgtopassword/>
     <Routes>
-      <Route path='/forgotpassword' element={<Forgtopassword/>}/>
+      <Route path='/users/reset_password/:id/:token' element={<Forgtopassword/>}/>
       <Route path='/singup' element={<Singup/>}/>
     </Routes>
     </>

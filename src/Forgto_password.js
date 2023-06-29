@@ -2,18 +2,16 @@ import React from "react";
 
 const Forgtopassword = () => {
   return (
-    <div className="App">
-      <div className="container">
-        <h2>Forgot Password</h2>
-        <form action="" method="post">
-          <label htmlFor="newPassword">New Password:</label>
-          <input type="Password" id="email" name="newPassword" required />
-          <br />
-          <br />
-          <input type="submit" value="Reset Password" />
-        </form>
-      </div>
-    </div>
+    <div class="container">
+    <form class="sign-in-form" action="#">
+      <h2>Sign In</h2>
+      <input type="text" placeholder="Username"/>
+      <input type="password" placeholder="Password"/>
+      <input type="email" placeholder="Email"/>
+      <input type="phonenumber" placeholder="Phone Number"/>
+      <button type="submit">Sign In</button>
+    </form>
+  </div>
   );
 };
 
