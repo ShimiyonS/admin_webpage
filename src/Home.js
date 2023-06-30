@@ -1,13 +1,16 @@
 import React from "react";
 import  { useNavigate }from "react-router-dom";
-import "./forgotpassword.css";
+import "./home.css"
 import { useState } from "react";
 const Home = (event) => {
-  const [email, setEmail] = useState();
+  const [email, setEmail] = useState("");
   const history =useNavigate();
   const hancdelClick = (e)=>{
     e.preventDefault();
    history(`/users/reset_password/${email}`)
+  }
+  const onChange =()=>{
+    setEmail("");
   }
   return (
     <>
@@ -19,7 +22,7 @@ const Home = (event) => {
             <input type="email" id="email"  name="email" required onChange={(e)=>setEmail(e.target.value)}/>
             <br />
             <br />
-            <button >Click to change the Password</button>
+            <button onClick={onChange}>Click to change the Password</button>
           </form>
         </div>
       </div>
