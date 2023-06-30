@@ -1,17 +1,19 @@
 import React from "react";
-
+import "./forgotpassword.css";
 const Forgtopassword = () => {
   return (
-    <div class="container">
-    <form class="sign-in-form" action="#">
-      <h2>Sign In</h2>
-      <input type="text" placeholder="Username"/>
-      <input type="password" placeholder="Password"/>
-      <input type="email" placeholder="Email"/>
-      <input type="phonenumber" placeholder="Phone Number"/>
-      <button type="submit">Sign In</button>
-    </form>
-  </div>
+    <div className="App">
+        <div className="container">
+          <h2>Forgot Password</h2>
+          <form action="" method="post">
+            <label htmlFor="newpassword">New Password:</label>
+            <input type="Password" id="email" name="password" required />
+            <br />
+            <br />
+            <input type="submit" value="submit" />
+          </form>
+        </div>
+      </div>
   );
 };
 
