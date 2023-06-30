@@ -26,12 +26,9 @@ const Forgtopassword = () => {
       .post(url, user, { headers: headers })
       .then((data) =>setSuccess(data.data.message))//console.log(data.data.message))
       .catch((error) => console.log(error));
-
+    setPassword("")
   };
-  const onChange = ()=>{
-    setPassword("");
-  }
-  return (
+return (
     <>
       <div className="App">
         <div className="container">
@@ -49,7 +46,7 @@ const Forgtopassword = () => {
             <br />
             <label htmlFor="confirmpassword">Confirm Password:</label>
             <input type="Password" id="confirmpassword" name="password" />
-            <button onClick={onChange}>Click to change the Password</button>
+            <button>Click to change the Password</button>
           </form>
           <div><p>{success}</p></div>
         </div>
